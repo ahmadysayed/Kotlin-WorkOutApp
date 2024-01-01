@@ -12,8 +12,8 @@
     },
   {
     "name": "Dumbbell Biceps Curl",
-    "image": "https://cdni.iconscout.com/illustration/premium/thumb/boy-lifting-dumbell-3051122-2543559.png?w=0&h=700",
-    "secondary_image": "https://media.istockphoto.com/photos/young-african-american-man-sitting-and-lifting-a-dumbbell-with-the-picture-id1162195270?b=1&k=20&m=1162195270&s=170667a&w=0&h=o5HC7lSq_bW7rqxhSvXNtxAGdppPDPiad_AGcv_Z9ZU=",
+    "image": "https://i.pinimg.com/originals/7d/3c/de/7d3cdeed84c1c19ad372d5b25beffd08.gif",
+    "secondary_image": "https://i.pinimg.com/originals/7d/3c/de/7d3cdeed84c1c19ad372d5b25beffd08.gif",
     "description": "The biceps curl mainly targets the biceps brachii, brachialis and brachioradialis muscles. The biceps is stronger at elbow flexion when the forearm is supinated (palms turned upward) and weaker when the forearm is pronated.[1] The brachioradialis is at its most effective when the palms are facing inward, and the brachialis is unaffected by forearm rotation. Therefore, the degree of forearm rotation affects the degree of muscle recruitment between the three muscles.",
     "difficulty": "intermediate",
     "equipment": "dumbbells",
@@ -23,8 +23,8 @@
   },
   {
     "name": "Deadlift",
-    "image": "https://cdni.iconscout.com/illustration/premium/thumb/strong-woman-lifting-barbell-3857858-3313810.png?w=0&h=700",
-    "secondary_image": "https://media.istockphoto.com/photos/gym-woman-lifting-heavy-weights-in-gym-picture-id942286558?b=1&k=20&m=942286558&s=170667a&w=0&h=32UwMNJFrKLvH0m3KmcRNbfL-jDOm8qS23oQSNs0aPc=",
+    "image": "https://www.inspireusafoundation.org/wp-content/uploads/2022/03/sumo-deadlift.gif",
+    "secondary_image": "https://www.inspireusafoundation.org/wp-content/uploads/2022/03/sumo-deadlift.gif",
     "description": "The deadlift is a weight training exercise in which a loaded barbell or bar is lifted off the ground to the level of the hips, torso perpendicular to the floor, before being placed back on the ground. It is one of the three powerlifting exercises, along with the squat and bench press. Deadlift has been shown to improve vertical jump performance and rate of muscle production. It can also be viewed as an ideal exercise for knee rehabilitation.",
     "difficulty": "expert",
     "equipment": "barbell",
@@ -34,8 +34,8 @@
   },
   {
     "name": "Crunch",
-    "image": "https://cdni.iconscout.com/illustration/premium/thumb/woman-training-abs-3857855-3313807.png?w=0&h=700",
-    "secondary_image": "https://media.istockphoto.com/photos/increasing-back-shoulder-and-arm-strength-picture-id1002863304?b=1&k=20&m=1002863304&s=170667a&w=0&h=oAVZx1ioeffLZiA0GAZZKwTlK5u2Emm6-yVFKgR3y34=",
+    "image": "https://www.inspireusafoundation.org/wp-content/uploads/2022/12/knee-touch-crunch.gif",
+    "secondary_image": "https://www.inspireusafoundation.org/wp-content/uploads/2022/12/knee-touch-crunch.gif",
     "description": "The crunch is one of the most popular abdominal exercises. When performed properly, it engages all the abdominal muscles but primarily it works the rectus abdominis muscle and the obliques. It allows both building six-pack abs, and tightening the belly. Crunches use the exerciser's own body weight to tone muscle, and are recommended as a low-cost exercise that can be performed at home.",
     "difficulty": "beginner",
     "equipment": "no equipment",
