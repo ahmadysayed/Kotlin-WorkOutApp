@@ -36,166 +36,92 @@
     </com.google.android.material.card.MaterialCardView>
 
 
-    <TextView
-        android:id="@+id/exercise_name"
-        android:layout_width="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:fontFamily="@font/poppins_bold"
-        android:text="Pushup"
-        android:textColor="@color/black"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
-
-    <LinearLayout
-        android:id="@+id/difficulty_level"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/exercise_name">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/difficulty"
-            app:tint="@color/black" />
-
-        <TextView
-            android:id="@+id/difficulty_level_tv"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:textSize="18sp"
-            android:textColor="@color/black"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:fontFamily="@font/poppins"
-            android:text="Intermediate" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/required_equipment"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/difficulty_level">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/equipment"
-            app:tint="@color/black" />
-
-        <TextView
-            android:id="@+id/required_equipment_tv"
-            android:layout_gravity="center"
-            android:textColor="@color/black"
-            android:layout_width="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="No equipment" />
-
-    </LinearLayout>
-    <LinearLayout
-        android:id="@+id/primary_muscles"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/required_equipment">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/primary"
-            app:tint="@color/black" />
-
-        <TextView
-            android:id="@+id/primary_muscles_tv"
-            android:layout_gravity="center"
-            android:layout_width="wrap_content"
-            android:textColor="@color/black"
-            android:layout_marginLeft="20dp"
-            android:textSize="18sp"
-            android:fontFamily="@font/poppins"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:text="Chest" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:id="@+id/linearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/primary_muscles">
-
-        <ImageView
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:src="@drawable/secondary"
-            app:tint="@color/black" />
-
-        <TextView
-            android:id="@+id/secondary_muscles_tv"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textColor="@color/black"
-            android:layout_gravity="center"
-            android:layout_marginStart="20dp"
-            android:gravity="center"
-            android:text="Triceps"
-            android:textSize="18sp" />
-
-    </LinearLayout>
-
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="25dp"
-        android:layout_marginLeft="10dp"
-        android:fontFamily="@font/poppins_medium"
-        android:textColor="@color/black"
-        android:text="Description"
-        android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout" />
-
     <androidx.core.widget.NestedScrollView
-        android:layout_width="409dp"
-        android:layout_height="201dp"
+        android:layout_width="416dp"
+        android:layout_height="466dp"
         android:fillViewport="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView2">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/time"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_marginLeft="130dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/button_bg_round"
+                android:padding="15dp"
+                android:text="01:00"
+                android:textColor="@color/black"
+                android:textSize="28sp" />
+
+            <Button
+                android:id="@+id/startButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="START"
+                android:textColor="@color/black"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                android:background="@drawable/button_bg"/>
 
             <TextView
-                android:id="@+id/description_tv"
-                android:layout_margin="10dp"
-                android:layout_width="match_parent"
+                android:id="@+id/descButton"
+                android:layout_width="305dp"
                 android:layout_height="wrap_content"
-                android:text="TextView" />
+                android:layout_marginStart="28dp"
+                android:textAlignment="center"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="40dp"
+                android:text="How To Do This"
+                android:textColor="#686060"
+                android:textSize="25sp"
+                android:padding="7dp"
+                android:textStyle="bold"
+                android:background="@drawable/button_ji"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="20dp"
+                android:background="#ECEDE8"
+                android:layout_marginBottom="10dp"
+                />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:background="#ECEDE8"
+                android:layout_marginTop="25dp"
+                android:orientation="horizontal"
+                >
+
+                <TextView
+                    android:id="@+id/descriptionTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:text="Triceps"
+                    android:textSize="18sp"
+                    android:padding="10dp"
+                    />
+
+            </LinearLayout>
+
         </LinearLayout>
     </androidx.core.widget.NestedScrollView>
 
