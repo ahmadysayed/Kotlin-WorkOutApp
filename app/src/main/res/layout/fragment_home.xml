@@ -29,7 +29,7 @@
                 android:id="@+id/call"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@color/white"
+                android:background="@color/orange"
                 android:orientation="vertical"
                 android:padding="5dp">
 
@@ -41,7 +41,7 @@
                     android:layout_marginTop="40dp"
                     android:fontFamily="@font/poppins_bold"
                     android:text="Trainings of any \nDifficulty level"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"

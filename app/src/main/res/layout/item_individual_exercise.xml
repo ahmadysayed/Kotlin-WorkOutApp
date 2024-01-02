@@ -42,9 +42,9 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="170dp"
                 android:layout_marginTop="12dp"
-                android:fontFamily="@font/poppins_bold"
+                android:fontFamily="@font/poppins_medium"
                 android:text="Dumbbell biceps curl"
-                android:textColor="@color/black"
+                android:textColor="@color/orange"
                 android:textSize="18sp"
                 app:layout_constraintStart_toStartOf="@+id/bg"
                 app:layout_constraintTop_toTopOf="parent" />
@@ -127,9 +127,9 @@
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/exercise_image"
         android:layout_width="150dp"
-        android:layout_height="220dp"
+        android:layout_height="200dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="50dp"
         android:paddingTop="5dp"
         app:cardElevation="30dp"
         app:cardCornerRadius="15dp"
