@@ -614,5 +614,115 @@
     "primary": "shoulders",
     "secondary": "traps",
     "bodyPart": "shoulders"
+  },
+  {
+    "name": "One-arm Dumbbell Row",
+    "image": "https://example.com/one_arm_dumbbell_row.gif",
+    "secondary_image": "https://example.com/one_arm_dumbbell_row.gif",
+    "description": "One-arm dumbbell row is a unilateral exercise that targets the muscles of the upper back. It involves pulling a dumbbell towards the hip while keeping the back straight.",
+    "difficulty": "intermediate",
+    "equipment": "dumbbell",
+    "primary": "upper back",
+    "secondary": "lats",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Row",
+    "image": "https://example.com/row.gif",
+    "secondary_image": "https://example.com/row.gif",
+    "description": "Row is a compound exercise that primarily targets the muscles of the upper back. It involves pulling a weight towards the body using a variety of equipment, such as a barbell or cable machine.",
+    "difficulty": "intermediate",
+    "equipment": "barbell, dumbbell, cable",
+    "primary": "upper back",
+    "secondary": "lats",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Dumbbell Pullover",
+    "image": "https://example.com/dumbbell_pullover.gif",
+    "secondary_image": "https://example.com/dumbbell_pullover.gif",
+    "description": "Dumbbell pullover is an isolation exercise that targets the muscles of the upper body, including the chest, lats, and triceps. It involves extending a dumbbell over the head while lying on a bench.",
+    "difficulty": "intermediate",
+    "equipment": "dumbbell",
+    "primary": "back",
+    "secondary": "lats, chest",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Barbell Deadlift",
+    "image": "https://example.com/barbell_deadlift.gif",
+    "secondary_image": "https://example.com/barbell_deadlift.gif",
+    "description": "Barbell deadlift is a compound exercise that targets the muscles of the lower back, hamstrings, and glutes. It involves lifting a loaded barbell from the ground to a standing position.",
+    "difficulty": "advanced",
+    "equipment": "barbell",
+    "primary": "lower back",
+    "secondary": "hamstrings, glutes",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Meadows Row",
+    "image": "https://example.com/meadows_row.gif",
+    "secondary_image": "https://example.com/meadows_row.gif",
+    "description": "Meadows row is a variation of the one-arm dumbbell row developed by bodybuilder John Meadows. It targets the lats and upper back muscles. It involves a unique body positioning to emphasize muscle engagement.",
+    "difficulty": "advanced",
+    "equipment": "dumbbell",
+    "primary": "upper back",
+    "secondary": "lats",
+    "bodyPart": "back"
+  },
+  {
+    "name": "One-arm Lat Pulldown",
+    "image": "https://example.com/one_arm_lat_pulldown.gif",
+    "secondary_image": "https://example.com/one_arm_lat_pulldown.gif",
+    "description": "One-arm lat pulldown is a unilateral exercise that targets the lats and upper back. It involves pulling a cable attachment down towards the hip while sitting or standing.",
+    "difficulty": "intermediate",
+    "equipment": "cable machine",
+    "primary": "lats",
+    "secondary": "upper back",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Landmine Row",
+    "image": "https://example.com/landmine_row.gif",
+    "secondary_image": "https://example.com/landmine_row.gif",
+    "description": "Landmine row is a compound exercise that targets the upper back, lats, and rear delts. It involves rowing a barbell attached to a landmine apparatus.",
+    "difficulty": "intermediate",
+    "equipment": "barbell, landmine attachment",
+    "primary": "upper back",
+    "secondary": "lats, rear delts",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Back Rows",
+    "image": "https://example.com/back_rows.gif",
+    "secondary_image": "https://example.com/back_rows.gif",
+    "description": "Back rows is a general term for various rowing exercises that target the muscles of the upper back. It can include exercises like barbell rows, cable rows, and machine rows.",
+    "difficulty": "intermediate",
+    "equipment": "varies (barbell, cable, machine)",
+    "primary": "upper back",
+    "secondary": "lats",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Close-grip Front Lat Pulldown",
+    "image": "https://example.com/close_grip_front_lat_pulldown.gif",
+    "secondary_image": "https://example.com/close_grip_front_lat_pulldown.gif",
+    "description": "Close-grip front lat pulldown is a variation of the lat pulldown that emphasizes the inner portion of the lats. It involves pulling a cable attachment down in front of the body with a close grip.",
+    "difficulty": "intermediate",
+    "equipment": "cable machine",
+    "primary": "lats",
+    "secondary": "upper back",
+    "bodyPart": "back"
+  },
+  {
+    "name": "Pull-down",
+    "image": "https://example.com/pull_down.gif",
+    "secondary_image": "https://example.com/pull_down.gif",
+    "description": "Pull-down is a general term for exercises that involve pulling a weight down towards the body. It can refer to various lat pulldown variations using different grips and equipment.",
+    "difficulty": "intermediate",
+    "equipment": "varies (cable, machine)",
+    "primary": "lats",
+    "secondary": "upper back",
+    "bodyPart": "back"
   }
 ]
