@@ -724,5 +724,137 @@
     "primary": "lats",
     "secondary": "upper back",
     "bodyPart": "back"
+  },
+  {
+    "name": "Crunch",
+    "image": "https://example.com/crunch.gif",
+    "secondary_image": "https://example.com/crunch.gif",
+    "description": "Crunch is a classic abdominal exercise that targets the rectus abdominis. It involves curling the shoulders towards the pelvis while keeping the lower back on the ground.",
+    "difficulty": "beginner",
+    "equipment": "none",
+    "primary": "abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Reverse Crunch",
+    "image": "https://example.com/reverse_crunch.gif",
+    "secondary_image": "https://example.com/reverse_crunch.gif",
+    "description": "Reverse crunch is an abdominal exercise that targets the lower abs. It involves lifting the hips towards the chest while keeping the upper back on the ground.",
+    "difficulty": "intermediate",
+    "equipment": "none",
+    "primary": "lower abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Plank",
+    "image": "https://example.com/plank.gif",
+    "secondary_image": "https://example.com/plank.gif",
+    "description": "Plank is a static core exercise that engages the muscles of the entire body, especially the abs, obliques, and lower back. It involves holding a push-up position with the body in a straight line.",
+    "difficulty": "beginner",
+    "equipment": "none",
+    "primary": "core",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Hollow Hold",
+    "image": "https://example.com/hollow_hold.gif",
+    "secondary_image": "https://example.com/hollow_hold.gif",
+    "description": "Hollow hold is a gymnastics-inspired core exercise that targets the entire abdominal area. It involves lying on the back and lifting the legs and upper body off the ground, creating a 'hollow' position.",
+    "difficulty": "intermediate",
+    "equipment": "none",
+    "primary": "abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Cable Crunch",
+    "image": "https://example.com/cable_crunch.gif",
+    "secondary_image": "https://example.com/cable_crunch.gif",
+    "description": "Cable crunch is an abdominal exercise performed using a cable machine. It targets the rectus abdominis by flexing the spine against resistance from the cable.",
+    "difficulty": "intermediate",
+    "equipment": "cable machine",
+    "primary": "abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Heel Taps",
+    "image": "https://example.com/heel_taps.gif",
+    "secondary_image": "https://example.com/heel_taps.gif",
+    "description": "Heel taps are an abdominal exercise that targets the obliques. It involves lying on the back and alternately tapping the heels to the ground while engaging the core.",
+    "difficulty": "beginner",
+    "equipment": "none",
+    "primary": "obliques",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Long Arm Crunch",
+    "image": "https://example.com/long_arm_crunch.gif",
+    "secondary_image": "https://example.com/long_arm_crunch.gif",
+    "description": "Long arm crunch is a variation of the traditional crunch that extends the arms overhead. It targets the rectus abdominis and engages the core muscles.",
+    "difficulty": "intermediate",
+    "equipment": "none",
+    "primary": "abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Leg Raise",
+    "image": "https://example.com/leg_raise.gif",
+    "secondary_image": "https://example.com/leg_raise.gif",
+    "description": "Leg raise is an abdominal exercise that targets the lower abs. It involves lifting the legs towards the ceiling while lying on the back, keeping the lower back on the ground.",
+    "difficulty": "intermediate",
+    "equipment": "none",
+    "primary": "lower abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Bear Crawl",
+    "image": "https://example.com/bear_crawl.gif",
+    "secondary_image": "https://example.com/bear_crawl.gif",
+    "description": "Bear crawl is a dynamic full-body exercise that engages the core, shoulders, and legs. It involves crawling on hands and feet in a quadruped position.",
+    "difficulty": "intermediate",
+    "equipment": "none",
+    "primary": "core",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Seated Scissor Kick",
+    "image": "https://example.com/seated_scissor_kick.gif",
+    "secondary_image": "https://example.com/seated_scissor_kick.gif",
+    "description": "Seated scissor kick is an abdominal exercise that targets the lower abs. It involves sitting on the ground and alternately kicking the legs up and down in a scissor-like motion.",
+    "difficulty": "beginner",
+    "equipment": "none",
+    "primary": "lower abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Sit-up",
+    "image": "https://example.com/sit_up.gif",
+    "secondary_image": "https://example.com/sit_up.gif",
+    "description": "Sit-up is a classic abdominal exercise that targets the entire abdominal area. It involves lifting the upper body from a supine position to a seated position.",
+    "difficulty": "beginner",
+    "equipment": "none",
+    "primary": "abs",
+    "secondary": "full body",
+    "bodyPart": "core"
+  },
+  {
+    "name": "Dragon Flags",
+    "image": "https://example.com/dragon_flags.gif",
+    "secondary_image": "https://example.com/dragon_flags.gif",
+    "description": "Dragon flags are an advanced abdominal exercise that targets the entire core. It involves lying on a bench and lifting the legs and lower back off the bench while keeping the upper body stable.",
+    "difficulty": "advanced",
+    "equipment": "bench",
+    "primary": "abs",
+    "secondary": "full body",
+    "bodyPart": "core"
   }
 ]
