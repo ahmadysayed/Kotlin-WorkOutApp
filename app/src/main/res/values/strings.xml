@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">WorkoutApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="Exercise">Exercise</string>
+    <string name="search_element">search</string>
+    <string name="home"> Home</string>
+    <string name="about_us">About us</string>
+    <string name="contact_us">contact us</string>
+    <string name="Terms_of_Service">Terms of Service</string>
+    <string name="Privacy_Policy">Privacy Policy</string>
+    <string name="get_started">Get Started</string>
+</resources>
