@@ -11,7 +11,7 @@ import kotlinx.coroutines.flow.flatMapLatest
 class ExercisesViewModel(application: Application) : AndroidViewModel(application)  {
 
     private val repository: ExerciseRepository
-    val difficulty = MutableStateFlow("all")
+    val bodyPart = MutableStateFlow("all")
 
     init {
        val exerciseDao = ExerciseDatabase
@@ -30,13 +30,12 @@ class ExercisesViewModel(application: Application) : AndroidViewModel(applicatio
         return repository.getAllExercises()
     }
 
-    val exercises = difficulty.flatMapLatest {
+    val exercises = bodyPart.flatMapLatest {
         repository.getAllOrSearch(it)
     }.asLiveData()
 
     fun getExercisesByDifficulty(difficulty: String): LiveData<List<Exercise>>{
         return repository.getExercisesByDifficulty(difficulty)
     }
-
 
 }
