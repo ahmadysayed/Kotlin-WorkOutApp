@@ -1,15 +1,22 @@
 package fr.isep.workoutapp.presentation.ui
 
+
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ArrayAdapter
 import android.widget.LinearLayout
+import android.widget.ListView
+import android.widget.SearchView
 import com.carolmusyoka.workoutapp.R
 
 class HomeScreen : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
+
+
 
         findViewById<LinearLayout>(R.id.layoutHome).setOnClickListener {
             startActivity(Intent(this, HomeScreen::class.java))
@@ -20,12 +27,13 @@ class HomeScreen : AppCompatActivity() {
         }
 
         findViewById<LinearLayout>(R.id.layoutAboutUs).setOnClickListener {
-            startActivity(Intent(this, AboutUs::class.java))
+            startActivity(Intent(this,  AboutUs::class.java))
         }
 
         findViewById<LinearLayout>(R.id.layoutContactUs).setOnClickListener {
             startActivity(Intent(this, ContactUs::class.java))
         }
+
     }
 }
 

@@ -26,5 +26,7 @@
     <color name="mustard_yellow">#FFDB58</color>
     <color name="dark_yellow">#FFAA00</color>
     <color name="colorPrimary">#FF2196F3</color>
-
+    <color name="colorAccent">#FF2196F3</color>
+    <color name="colorPrimaryDark">#FF2196F3</color>
+    <color name="colorDescriptionText">#FF2196F3</color>
 </resources>
