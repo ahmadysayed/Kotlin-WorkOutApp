@@ -18,11 +18,10 @@ interface ExerciseDao {
     @Query("SELECT * FROM exercise")
     fun getExercisesList(): List<Exercise>
 
-    @Query("Select * from exercise WHERE difficultyLevel=:difficulty")
-    fun getDifficulty(difficulty: String?): LiveData<List<Exercise>>
+    @Query("Select * from exercise WHERE bodyPartMuscles=:bodyPart")
+    fun getBodyPart(bodyPart: String?): LiveData<List<Exercise>>
 
-    @Query("Select * from exercise WHERE difficultyLevel=:difficulty")
-    fun getByDifficulty(difficulty: String?): Flow<List<Exercise>>
-
+    @Query("Select * from exercise WHERE bodyPartMuscles=:bodyPart")
+    fun getByBodyPart(bodyPart: String?): Flow<List<Exercise>>
 
 }

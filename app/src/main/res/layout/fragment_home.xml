@@ -65,47 +65,89 @@
         app:layout_constraintTop_toBottomOf="@+id/appBarLayout"
         android:layout_height="wrap_content">
 
-        <com.google.android.material.chip.ChipGroup
-            android:id="@+id/chip_group_filter"
+        <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="8dp"
-            app:singleSelection="true">
+            android:fillViewport="true">
 
-            <com.google.android.material.chip.Chip
-                android:layout_marginLeft="10dp"
-                android:layout_width="wrap_content"
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group_filter"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="All"
-                android:tag="all"
-                style="@style/Widget.MaterialComponents.Chip.Filter" />
+                android:layout_marginTop="8dp"
+                app:singleSelection="true">
 
-            <com.google.android.material.chip.Chip
-                android:layout_marginLeft="1dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Beginner"
-                android:tag="beginner"
-                style="@style/Widget.MaterialComponents.Chip.Filter" />
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="All"
+                    android:tag="all"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
 
-            <com.google.android.material.chip.Chip
-                android:layout_marginLeft="1dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Intermediate"
-                android:tag="intermediate"
-                style="@style/Widget.MaterialComponents.Chip.Filter" />
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Chest"
+                    android:tag="chest"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
 
-            <com.google.android.material.chip.Chip
-                android:layout_marginLeft="1dp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Expert"
-                android:tag="expert"
-                style="@style/Widget.MaterialComponents.Chip.Filter" />
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Leg"
+                    android:tag="leg"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
 
-        </com.google.android.material.chip.ChipGroup>
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Biceps"
+                    android:tag="biceps"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Triceps"
+                    android:tag="triceps"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shoulders"
+                    android:tag="shoulders"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Back"
+                    android:tag="back"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+                <com.google.android.material.chip.Chip
+                    android:layout_marginLeft="1dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Core"
+                    android:tag="core"
+                    style="@style/Widget.MaterialComponents.Chip.Filter" />
+
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </HorizontalScrollView>
     </LinearLayout>
 
 
