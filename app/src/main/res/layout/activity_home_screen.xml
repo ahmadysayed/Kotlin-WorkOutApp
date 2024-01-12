@@ -4,276 +4,213 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fr.isep.workoutapp.presentation.ui.HomeScreen">
+    tools:context="fr.isep.workoutapp.presentation.ui.HomeScreen"
+    android:background="@color/background_color">
 
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:id="@+id/layoutHeader"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:background="@drawable/header_background"
-    android:padding="10dp"
-    app:layout_constraintTop_toTopOf="parent">
-
-    <TextView
-        android:id="@+id/textHello"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
-        android:layout_marginTop="15dp"
-        android:text="@string/Exercise"
-        android:textColor="@color/white"
-        android:textSize="25sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"  />
-
-
-        <ImageView
-        android:id="@+id/imageMenu"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginEnd="15dp"
-        android:contentDescription="@string/app_name"
-        android:text="@string/Exercise"
-        android:src="@drawable/baseline_menu_24"
-        app:tint="@color/white"
-        app:layout_constraintBottom_toBottomOf="@id/textHello"
-            app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@id/textHello"  />
-
-    <LinearLayout
+    <!-- Header Layout -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/white_rectangle_background"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageMenu"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="9dp">
+        android:background="@drawable/header_gradient_background"
+        android:elevation="4dp"
+        app:layout_constraintTop_toTopOf="parent">
 
-
-        <EditText
-            android:id="@+id/plain_text_input"
-            android:layout_width="0dp"
-            android:layout_height="48dp"
+        <!-- Header Text -->
+        <TextView
+            android:id="@+id/textHello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
             android:layout_marginTop="15dp"
-            android:layout_weight="1"
-            android:background="@null"
-            android:hint="@string/search_element"
-            android:imeOptions="actionSearch"
-            android:inputType="text"
-            android:paddingStart="15dp"
-            android:paddingEnd="15dp"
-            android:textColor="@color/white"
-            android:textSize="16sp"
-            />
+            android:text="@string/Exercise"
+            android:textColor="@color/primary_text"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
+        <!-- Menu Icon -->
         <ImageView
-            android:layout_width="40dp"
-            android:layout_height="match_parent"
-            android:background="@drawable/search_icon_background"
+            android:id="@+id/imageMenu"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="15dp"
             android:contentDescription="@string/app_name"
-            android:padding="6dp"
-            android:src="@drawable/ic_search"
-            app:tint="@color/colorPrimary" />
+            android:src="@drawable/baseline_menu_24"
+            app:tint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/textHello"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/textHello" />
 
-    </LinearLayout>
+        <!-- Search Bar Layout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rounded_edittext_background"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/textHello"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+            <!-- Search Input -->
+            <EditText
+                android:id="@+id/plain_text_input"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:hint="@string/search_element"
+                android:imeOptions="actionSearch"
+                android:inputType="text"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:textColor="@color/text_color"
+                android:textSize="16sp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_search"
+                android:padding="10dp"
+                app:tint="@color/icon_color" />
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
+    <!-- Main Content ScrollView -->
+
+    <!-- Footer Layout -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:overScrollMode="never"
         android:scrollbars="none"
-        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/footerLayout"
         app:layout_constraintTop_toBottomOf="@id/layoutHeader"
-        app:layout_constraintVertical_bias="1.0"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="52dp">
 
-
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <HorizontalScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="horizontal">
 
             <LinearLayout
-                android:id="@+id/layoutHome"
-                android:layout_width="0dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_rectangle_background"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="15dp"
-                app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toStartOf="@+id/layoutExercise"
-                app:layout_constraintHorizontal_weight="1">
+                android:orientation="horizontal"
+                android:padding="16dp">
 
-                <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_margin="8dp"
-                android:contentDescription="@string/app_name"
-                android:padding="8dp"
-                android:src="@drawable/home" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                <!-- Home Section Layout -->
+                <LinearLayout
+                    android:id="@+id/layoutHome"
+                    android:layout_width="128dp"
+                    android:layout_height="139dp"
+                    android:background="@drawable/fitness"
                     android:gravity="center"
-                    android:text="@string/home"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
+                    android:orientation="vertical"
+                    android:padding="15dp">
+                    <!-- Contents of Home layout -->
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Exercise"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_text"
+                        android:layout_marginBottom="88dp"/>
+                </LinearLayout>
+
+                <!-- Exercise Section Layout -->
+                <LinearLayout
+                    android:id="@+id/layoutExercise"
+                    android:layout_width="128dp"
+                    android:layout_height="139dp"
+                    android:background="@drawable/fitness"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Exercise"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_text"
+                        android:layout_marginBottom="88dp"/>
+                    <!-- Contents of Exercise layout -->
+                </LinearLayout>
+
+                <!-- About Us Section Layout -->
+                <LinearLayout
+                    android:id="@+id/layoutAboutUs"
+                    android:layout_width="128dp"
+                    android:layout_height="139dp"
+                    android:background="@drawable/fitness"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Exercise"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_text"
+                        android:layout_marginBottom="88dp"/>
+                    <!-- Contents of About Us layout -->
+                </LinearLayout>
+
+                <!-- Contact Us Section Layout -->
+                <LinearLayout
+                    android:id="@+id/layoutContactUs"
+                    android:layout_width="128dp"
+                    android:layout_height="139dp"
+                    android:background="@drawable/fitness"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:padding="20dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/Exercise"
+                        android:textSize="18sp"
+                        android:textColor="@color/primary_text"
+                        android:layout_marginBottom="88dp"/>
+
+                    <!-- Contents of Contact Us layout -->
+                </LinearLayout>
 
             </LinearLayout>
+        </HorizontalScrollView>
 
-            <LinearLayout
-                android:id="@+id/layoutExercise"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_rectangle_background"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="15dp"
-                app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/layoutHome"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintHorizontal_weight="1">
-
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="8dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="8dp"
-                    android:src="@drawable/icon" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/Exercise"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layoutAboutUs"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_rectangle_background"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="15dp"
-                app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/layoutHome"
-                app:layout_constraintEnd_toStartOf="@+id/layoutContactUs"
-                app:layout_constraintHorizontal_weight="1">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="8dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="8dp"
-                    android:background="@drawable/imageview_border"
-                    android:src="@drawable/about_us"/>
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/about_us"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/layoutContactUs"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="22dp"
-                android:background="@drawable/white_rectangle_background"
-                android:gravity="center"
-                android:orientation="vertical"
-                android:padding="15dp"
-                app:layout_constraintDimensionRatio="1:1"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toEndOf="@id/layoutAboutUs"
-                app:layout_constraintTop_toBottomOf="@id/layoutExercise"
-                app:layout_constraintHorizontal_weight="1">
-
-                <ImageView
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="8dp"
-                    android:contentDescription="@string/app_name"
-                    android:padding="8dp"
-                    android:src="@drawable/contact_us" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:text="@string/contact_us"
-                    android:textColor="@color/black"
-                    android:textSize="20sp"
-                    android:textStyle="bold"/>
-
-            </LinearLayout>
-
-        </androidx.constraintlayout.widget.ConstraintLayout>
     </ScrollView>
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager2"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <LinearLayout
         android:id="@+id/footerLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:padding="10dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:background="@drawable/footer_background"
+        android:padding="15dp"
+        app:layout_constraintBottom_toBottomOf="parent">
 
-        <TextView
-            android:id="@+id/textViewTerms"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Terms_of_Service"
-            android:textColor="@color/mustard_yellow"
-            android:padding="12dp"
-            android:minHeight="48dp"
-            android:minWidth="48dp"
-            android:clickable="true"
-            android:focusable="true"
-            android:gravity="center" />
+        <!-- Footer Text Views for Terms of Service, Privacy Policy, etc. -->
+        <!-- Include TextViews for textViewTerms, textViewPrivacy as before -->
+        <!-- Optionally, apply new styles or colors to these TextViews -->
 
-        <TextView
-            android:id="@+id/textViewPrivacy"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/Privacy_Policy"
-            android:textColor="@color/mustard_yellow"
-            android:clickable="true"
-            android:focusable="true"
-            android:minHeight="48dp"
-            android:minWidth="48dp"
-            android:gravity="center" />
     </LinearLayout>
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -28,8 +28,8 @@
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/call"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/orange"
+                android:layout_height="100dp"
+                android:background="@drawable/header_gradient_background"
                 android:orientation="vertical"
                 android:padding="5dp">
 
@@ -37,11 +37,11 @@
                     android:id="@+id/training_call"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="95dp"
-                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="24dp"
                     android:fontFamily="@font/poppins_bold"
-                    android:text="All Exercises"
-                    android:textColor="@color/white"
+                    android:text="Exercise Category"
+                    android:textColor="@color/black"
                     android:textSize="30sp"
                     android:textStyle="bold"
                     app:layout_constraintStart_toStartOf="parent"

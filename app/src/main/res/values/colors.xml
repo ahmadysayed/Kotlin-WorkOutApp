@@ -27,4 +27,10 @@
     <color name="dark_yellow">#FFAA00</color>
     <color name="colorPrimary">#FF2196F3</color>
 
+
+    <color name="background_color">#F5F5F5</color> <!-- Light grey background -->
+    <color name="primary_text">#212121</color> <!-- Primary text color -->
+    <color name="text_color">#616161</color> <!-- Regular text color -->
+    <color name="icon_color">#FF9800</color> <!-- Icon color, example: orange -->
+
 </resources>
