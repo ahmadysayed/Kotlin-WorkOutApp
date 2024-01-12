@@ -24,7 +24,6 @@ class ExerciseAdapter(
     fun setOnExerciseListener(listener: ((Exercise) -> Unit)) {
         this.listener = listener
     }
-
     inner class ExerciseVH(itemView: ItemIndividualExerciseBinding) : RecyclerView.ViewHolder(itemView.root)
 
 

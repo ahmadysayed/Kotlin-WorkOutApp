@@ -11,15 +11,15 @@ class ExerciseRepository(private val exerciseDao: ExerciseDao) {
     fun getAllExercises(): LiveData<List<Exercise>> {
         return exerciseDao.getExercises()
     }
-    fun getExercisesByDifficulty(difficulty: String): LiveData<List<Exercise>>{
-        return exerciseDao.getDifficulty(difficulty)
+    fun getExercisesByDifficulty(bodyPart: String): LiveData<List<Exercise>>{
+        return exerciseDao.getBodyPart(bodyPart)
     }
 
-    fun getAllOrSearch(difficulty: String): Flow<List<Exercise>> {
-        return if (difficulty == "all") {
+    fun getAllOrSearch(bodyPart: String): Flow<List<Exercise>> {
+        return if (bodyPart == "all") {
             exerciseDao.getAllExercises()
         } else {
-            exerciseDao.getByDifficulty(difficulty)
+            exerciseDao.getByBodyPart(bodyPart)
         }
     }
 }

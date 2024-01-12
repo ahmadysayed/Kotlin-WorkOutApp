@@ -66,7 +66,7 @@ class HomeFragment : Fragment() {
             val chip  = (it as Chip)
             chip.setOnCheckedChangeListener { _, b ->
                 if (b) {
-                        exerciseViewModel.difficulty.value = chip.tag as String
+                        exerciseViewModel.bodyPart.value = chip.tag as String
                 }
             }
         }
