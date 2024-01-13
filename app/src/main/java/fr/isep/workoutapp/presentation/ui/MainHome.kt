@@ -38,7 +38,7 @@ class MainHome : AppCompatActivity() {
     }
 
     private fun displayDescriptionMessage() {
-        val descriptionText = " We are final year engineering students of ISEP working on our Kotlin project.  Thank you to our professor Mr. jerome BATON for his guidance throughout this semester."
+        val descriptionText = " We are final year software engineering students of ISEP working on our mobile development project.  Thanks to our professors, Prof. Jerome BATON and Prof. Mauras Togbe for there guidance throughout this course."
         descriptionTextView.text = descriptionText
     }
 
