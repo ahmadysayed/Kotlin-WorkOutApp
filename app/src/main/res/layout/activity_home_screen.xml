@@ -111,13 +111,14 @@
                     android:id="@+id/layoutExercise"
                     android:layout_width="128dp"
                     android:layout_height="139dp"
-                    android:background="@drawable/fitness"
+                    android:background="@drawable/exc"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp">
 
 
                     <!-- Contents of Exercise layout -->
+
                 </LinearLayout>
 
                 <!-- About Us Section Layout -->
@@ -125,12 +126,12 @@
                     android:id="@+id/layoutAboutUs"
                     android:layout_width="128dp"
                     android:layout_height="139dp"
-                    android:background="@drawable/about"
+                    android:background="@drawable/team"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp">
 
-                    <!-- Contents of About Us layout -->
+
                 </LinearLayout>
 
                 <!-- Contact Us Section Layout -->
@@ -138,13 +139,14 @@
                     android:id="@+id/layoutContactUs"
                     android:layout_width="128dp"
                     android:layout_height="139dp"
-                    android:background="@drawable/contact2"
+                    android:background="@drawable/cont"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="20dp">
 
 
                     <!-- Contents of Contact Us layout -->
+
                 </LinearLayout>
 
             </LinearLayout>
@@ -158,35 +160,18 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="15dp"
         android:orientation="horizontal"
         android:layout_marginBottom="250dp"
         app:layout_constraintBottom_toBottomOf="@id/layout">
 
     <include layout="@layout/card_training_time"
         android:layout_width="0dp"
-        android:layout_height="match_parent"
+        android:layout_height="240dp"
         android:layout_margin="8dp"
         android:layout_weight="1"/>
 
 
-    <LinearLayout
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="1"
-        android:orientation="vertical">
-
-        <include layout="@layout/card_calories"
-            android:layout_width="match_parent"
-            android:layout_margin="8dp"
-            android:layout_height="wrap_content" />
-
-        <include layout="@layout/card_walk"
-            android:layout_width="match_parent"
-            android:layout_margin="8dp"
-            android:layout_height="93dp" />
-
-    </LinearLayout>
     </LinearLayout>
 
 
