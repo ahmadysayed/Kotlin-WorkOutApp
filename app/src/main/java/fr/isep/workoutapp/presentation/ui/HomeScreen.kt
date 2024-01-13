@@ -1,6 +1,7 @@
 package fr.isep.workoutapp.presentation.ui
 
 import android.content.Intent
+import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
@@ -12,23 +13,26 @@ import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-
-
 import com.carolmusyoka.workoutapp.R
+import com.carolmusyoka.workoutapp.databinding.ActivityHomeScreenBinding
+import com.google.firebase.auth.FirebaseAuth
 import kotlin.math.abs
 
 class HomeScreen : AppCompatActivity() {
 
-
-
+    private lateinit var firebaseAuth: FirebaseAuth
+    private lateinit var binding: ActivityHomeScreenBinding
     private lateinit var  viewPager2: ViewPager2
     private lateinit var viewPager: ViewPager2
     private lateinit var handler : Handler
     private lateinit var imageList:ArrayList<Int>
     private lateinit var adapter: ImageAdapter
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_home_screen)
+
 
 
         init()
@@ -43,10 +47,22 @@ class HomeScreen : AppCompatActivity() {
         })
 
 
+        firebaseAuth = FirebaseAuth.getInstance()
 
 
+        // Assuming you have a button in your layout to handle the logout action
+        val logoutButton = findViewById<TextView>(R.id.logout)
+        logoutButton.setOnClickListener {
+            // Call the signOut method
+            firebaseAuth.signOut()
 
+            // Optionally, redirect the user to a login screen after logout
+            val loginIntent = Intent(this, SignInActivity2::class.java)
+            startActivity(loginIntent)
 
+            // Finish the current activity so the user can't return to it after logging out
+            finish()
+        }
 
 
         findViewById<LinearLayout>(R.id.layoutExercise).setOnClickListener {
@@ -61,7 +77,11 @@ class HomeScreen : AppCompatActivity() {
             startActivity(Intent(this, ContactUs::class.java))
         }
 
+
+
     }
+
+
 
 
 
