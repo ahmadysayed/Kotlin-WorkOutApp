@@ -30,7 +30,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <!-- Menu Icon -->
+
         <ImageView
             android:id="@+id/imageMenu"
             android:layout_width="30dp"
@@ -75,17 +75,20 @@
                 android:padding="10dp"
                 app:tint="@color/icon_color" />
         </LinearLayout>
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <!-- Main Content ScrollView -->
 
     <!-- Footer Layout -->
     <ScrollView
+        android:id="@id/layout"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:overScrollMode="never"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@id/footerLayout"
+        app:layout_constraintBottom_toTopOf="@+id/footerLayout"
         app:layout_constraintTop_toBottomOf="@id/layoutHeader"
         app:layout_constraintVertical_bias="0.0"
         tools:layout_editor_absoluteX="52dp">
@@ -102,25 +105,6 @@
                 android:orientation="horizontal"
                 android:padding="16dp">
 
-                <!-- Home Section Layout -->
-                <LinearLayout
-                    android:id="@+id/layoutHome"
-                    android:layout_width="128dp"
-                    android:layout_height="139dp"
-                    android:background="@drawable/fitness"
-                    android:gravity="center"
-                    android:orientation="vertical"
-                    android:padding="15dp">
-                    <!-- Contents of Home layout -->
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Exercise"
-                        android:textSize="18sp"
-                        android:textColor="@color/primary_text"
-                        android:layout_marginBottom="88dp"/>
-                </LinearLayout>
 
                 <!-- Exercise Section Layout -->
                 <LinearLayout
@@ -132,13 +116,7 @@
                     android:orientation="vertical"
                     android:padding="15dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Exercise"
-                        android:textSize="18sp"
-                        android:textColor="@color/primary_text"
-                        android:layout_marginBottom="88dp"/>
+
                     <!-- Contents of Exercise layout -->
                 </LinearLayout>
 
@@ -147,18 +125,11 @@
                     android:id="@+id/layoutAboutUs"
                     android:layout_width="128dp"
                     android:layout_height="139dp"
-                    android:background="@drawable/fitness"
+                    android:background="@drawable/about"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="15dp">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Exercise"
-                        android:textSize="18sp"
-                        android:textColor="@color/primary_text"
-                        android:layout_marginBottom="88dp"/>
                     <!-- Contents of About Us layout -->
                 </LinearLayout>
 
@@ -167,17 +138,11 @@
                     android:id="@+id/layoutContactUs"
                     android:layout_width="128dp"
                     android:layout_height="139dp"
-                    android:background="@drawable/fitness"
+                    android:background="@drawable/contact2"
                     android:gravity="center"
                     android:orientation="vertical"
                     android:padding="20dp">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="@string/Exercise"
-                        android:textSize="18sp"
-                        android:textColor="@color/primary_text"
-                        android:layout_marginBottom="88dp"/>
+
 
                     <!-- Contents of Contact Us layout -->
                 </LinearLayout>
@@ -185,18 +150,75 @@
             </LinearLayout>
         </HorizontalScrollView>
 
+
+
+
     </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="@id/layout">
+
+    <include layout="@layout/card_training_time"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:layout_weight="1"/>
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <include layout="@layout/card_calories"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="wrap_content" />
+
+        <include layout="@layout/card_walk"
+            android:layout_width="match_parent"
+            android:layout_margin="8dp"
+            android:layout_height="93dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="340dp"
+        android:fontFamily="sans-serif"
+        android:text="Popular"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/layout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/layoutHeader" />
+
+
     <androidx.viewpager2.widget.ViewPager2
         android:id="@+id/viewPager2"
         android:layout_width="0dp"
-        android:layout_height="200dp"
+        android:layout_height="150dp"
         android:paddingStart="80dp"
         android:paddingEnd="80dp"
+        android:layout_marginTop="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
 
     <LinearLayout
         android:id="@+id/footerLayout"

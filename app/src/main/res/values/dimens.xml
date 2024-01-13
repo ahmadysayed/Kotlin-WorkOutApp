@@ -3,4 +3,6 @@
     <dimen name="_20sdp">20dp</dimen>
     <dimen name="_5sdp">5dp</dimen>
     <dimen name="_50sdp">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
 </resources>

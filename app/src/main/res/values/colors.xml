@@ -33,4 +33,9 @@
     <color name="text_color">#616161</color> <!-- Regular text color -->
     <color name="icon_color">#FF9800</color> <!-- Icon color, example: orange -->
 
+
+    <color name="colorAccent">#FF2196F3</color>
+    <color name="colorPrimaryDark">#FF2196F3</color>
+    <color name="colorDescriptionText">#FF2196F3</color>
+
 </resources>

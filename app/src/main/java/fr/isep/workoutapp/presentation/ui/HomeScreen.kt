@@ -3,17 +3,23 @@ package fr.isep.workoutapp.presentation.ui
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+
 import android.os.Handler
 import android.os.Looper
 import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
+
+
 import com.carolmusyoka.workoutapp.R
 import kotlin.math.abs
 
 class HomeScreen : AppCompatActivity() {
+
+
 
     private lateinit var  viewPager2: ViewPager2
     private lateinit var viewPager: ViewPager2
@@ -40,22 +46,24 @@ class HomeScreen : AppCompatActivity() {
 
 
 
-        findViewById<LinearLayout>(R.id.layoutHome).setOnClickListener {
-            startActivity(Intent(this, MainHome::class.java))
-        }
+
+
 
         findViewById<LinearLayout>(R.id.layoutExercise).setOnClickListener {
             startActivity(Intent(this, MainActivity::class.java))
         }
 
         findViewById<LinearLayout>(R.id.layoutAboutUs).setOnClickListener {
-            startActivity(Intent(this, AboutUs::class.java))
+            startActivity(Intent(this,  MainHome::class.java))
         }
 
         findViewById<LinearLayout>(R.id.layoutContactUs).setOnClickListener {
             startActivity(Intent(this, ContactUs::class.java))
         }
+
     }
+
+
 
 
     override fun onPause() {
