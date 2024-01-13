@@ -12,9 +12,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Main">
         <activity
+            android:name="fr.isep.workoutapp.presentation.ui.SignUpActivity2"
+            android:exported="false" />
+        <activity
+            android:name="fr.isep.workoutapp.presentation.ui.SignInActivity2"
+            android:exported="false" />
+        <activity
             android:name="fr.isep.workoutapp.presentation.ui.MainHome"
             android:exported="false" />
-
         <activity
             android:name="fr.isep.workoutapp.presentation.ui.ExerciseCategory"
             android:exported="false" />

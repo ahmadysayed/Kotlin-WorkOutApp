@@ -37,5 +37,6 @@
     <color name="colorAccent">#FF2196F3</color>
     <color name="colorPrimaryDark">#FF2196F3</color>
     <color name="colorDescriptionText">#FF2196F3</color>
+    <color name="yellow">#FFC801</color>
 
 </resources>
