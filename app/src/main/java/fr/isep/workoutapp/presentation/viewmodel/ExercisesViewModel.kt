@@ -34,8 +34,10 @@ class ExercisesViewModel(application: Application) : AndroidViewModel(applicatio
         repository.getAllOrSearch(it)
     }.asLiveData()
 
-    fun getExercisesByDifficulty(difficulty: String): LiveData<List<Exercise>>{
-        return repository.getExercisesByBodyPart(difficulty)
+
+    fun getExercisesByBodyPart(category: String): LiveData<List<Exercise>>{
+        return repository.getExercisesByBodyPart(category)
+
     }
 
 }
