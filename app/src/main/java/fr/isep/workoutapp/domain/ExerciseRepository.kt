@@ -11,7 +11,7 @@ class ExerciseRepository(private val exerciseDao: ExerciseDao) {
     fun getAllExercises(): LiveData<List<Exercise>> {
         return exerciseDao.getExercises()
     }
-    fun getExercisesByDifficulty(bodyPart: String): LiveData<List<Exercise>>{
+    fun getExercisesByBodyPart(bodyPart: String): LiveData<List<Exercise>>{
         return exerciseDao.getBodyPart(bodyPart)
     }
 
