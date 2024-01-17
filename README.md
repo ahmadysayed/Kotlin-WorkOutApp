@@ -18,15 +18,47 @@ I used Android Studio Bumblebee 2023. In case of any issues, do let me know beca
     * [Coroutine](https://developer.android.com/kotlin/coroutines)
  
 
-<svg width="200" height="100" xmlns="http://www.w3.org/2000/svg">
-  <!-- Draw the body of the car -->
-  <rect x="10" y="30" width="180" height="40" fill="blue" />
+<svg width="365" height="185">
+    
+      <rect x="70" y="10" width="220" height="130" fill="transparent" rx="150" stroke="crimson" stroke-width="10" />
+    
+    
+      <rect x="10" y="70" width="340" height="80" fill="crimson" rx="30" />
+      
+    <g>
+   
+      <line x1="145" y1="10" x2="145" y2="80" stroke="crimson" stroke-width="10"/>
 
-  <!-- Draw the roof of the car -->
-  <rect x="20" y="10" width="160" height="30" fill="blue" />
+   
+      <line x1="215" y1="10" x2="215" y2="80" stroke="crimson" stroke-width="10"/>
+    </g>
+  
+    <g>
+    
+      <rect x="0" y="110" width="40" height="20" fill="#999" rx="10" />
+    
+    
+      <rect x="325" y="110" width="40" height="20" fill="#999" rx="10" />
+    </g>  
+  
+    
+    <g>
+      <circle r="40px" fill="#222" stroke="white" stroke-width="7" cx="90" cy="140"/>    
+      <circle r="15px" fill="#555" cx="90" cy="140"/>
+    </g>
+  
+   
+    <g>
+      <circle r="40px" fill="#222" stroke="white" stroke-width="7" cx="270" cy="140"/>
+      <circle r="15px" fill="#555" cx="270" cy="140"/>
+    </g>  
 
-  <!-- Draw the wheels of the car -->
-  <circle cx="40" cy="75" r="15" fill="black" />
-  <circle cx="160" cy="75" r="15" fill="black" />
-</svg>
+    <g>
+    
+      <circle r="15px" fill="gold" cx="340" cy="90"/>
+      
+    
+      <circle r="10px" fill="orange" cx="15" cy="90"/>
+    </g>  
+</svg>    
 
