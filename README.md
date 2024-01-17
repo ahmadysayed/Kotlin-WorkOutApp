@@ -18,6 +18,16 @@ I used Android Studio Bumblebee 2023. In case of any issues, do let me know beca
     * [Coroutine](https://developer.android.com/kotlin/coroutines)
  
 
+
+```xsvg:0,0,50,50
+polyline 0,0 10,0 0,10 green
+```
+
+```xsvg:0,0,50,50
+circle 25,25 25 aqua maroon
+```
+ 
+
 <svg width="365" height="185">
     
       <rect x="70" y="10" width="220" height="130" fill="transparent" rx="150" stroke="crimson" stroke-width="10" />
